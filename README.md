@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hey%20there,%20I'm%20Adhil%20%F0%9F%91%8B&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Product%20Engineer%20%C2%B7%20Designer%20%C2%B7%20AI%2FML%20Explorer&descAlignY=55&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Turning+ideas+into+products+%F0%9F%9A%80;Designing+with+empathy%2C+building+with+code;CS+Student+%40+IIIT+Kottayam+%F0%9F%8E%93;AI%2FML+%C2%B7+Full-Stack+%C2%B7+Computer+Vision" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Aspiring+Product+Manager+%26+Designer+%F0%9F%8E%A8;Turning+ideas+into+products+%F0%9F%9A%80;Designing+with+empathy%2C+building+with+code;CS+Student+%40+IIIT+Kottayam+%F0%9F%8E%93;AI%2FML+%C2%B7+Full-Stack+%C2%B7+Computer+Vision" alt="Typing SVG" />
 
 <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="130"/>
 
@@ -12,15 +12,18 @@
 
 ## 🌱 About Me
 
-I'm a Computer Science student at **IIIT Kottayam** who sits right at the intersection of **design and engineering** — I like sketching an experience out first, then actually building the thing that makes it real. Whether that's a slick interface or the backend quietly doing the heavy lifting, I care about both halves equally.
+I'm a Computer Science student at **IIIT Kottayam**, and honestly, the part of building products I love most is figuring out **why** something should exist before I ever think about **how**. That's what keeps pulling me toward **Product Management and Product Design** — understanding a user's problem deeply, shaping the right solution, and then having the technical chops to actually help build it.
 
-Lately I've been deep in **AI/ML** — from multi-agent systems that review code, to computer vision pipelines that catch counterfeits, to Android apps that help farmers make smarter calls. I like problems that are a little bit messy and a lot useful.
+I sit at the intersection of **design, strategy, and engineering**. I like sketching an experience out first, validating whether it actually solves the problem, and then either designing it properly or building it myself. Being able to move fluidly between a Figma board, a product roadmap, and a codebase is exactly the kind of product person I'm trying to become.
+
+Lately I've been deep in **AI/ML** — from multi-agent systems that review code, to computer vision pipelines that catch counterfeits, to Android apps that help farmers make smarter calls. I like problems that are a little bit messy and a lot useful — and I care just as much about *why* we're building them as *how*.
 
 ```txt
 const adhil = {
-    role: "Product Engineer & Designer",
-    currentlyLearning: ["Agentic AI systems", "Computer Vision", "Distributed backends"],
-    codePhilosophy: "design it beautiful, build it solid, ship it real",
+    role: "Aspiring Product Manager & Product Designer | Engineer at heart",
+    interests: ["Product Strategy", "UX/Product Design", "0-to-1 Building", "AI/ML"],
+    currentlyLearning: ["Product thinking & PM frameworks", "Agentic AI systems", "Computer Vision"],
+    productPhilosophy: "understand the user, design the right thing, build it solid, ship it real",
     funFact: "I'll happily rebuild a UI three times just to get the motion right 🎨"
 };
 ```
@@ -28,6 +31,33 @@ const adhil = {
 <div align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="500">
 </div>
+
+<br>
+
+## 🎯 What I'm Focused On
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+
+### 📋 Product Management
+Thinking in problems, not just features — user research, prioritization, roadmapping, and shipping things people actually want.
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### 🎨 Product Design
+Wireframes to high-fidelity prototypes — designing flows that feel obvious in hindsight, with motion and detail that make an interface feel alive.
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### ⚙️ Engineering
+The technical fluency to build what I design and speak the same language as the engineers I'd be working with.
+
+</td>
+</tr>
+</table>
 
 <br>
 
@@ -138,8 +168,8 @@ A product design concept for an AI-powered health tracker — exploring how a cl
 <div align="center">
 
 <a href="https://github.com/aadhii-i"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="#"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/aadhiiii"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://drive.google.com/file/d/15AgdqeN3le32pMQy7uMFNzyh7CwSev-0/view?usp=sharing"><img src="https://img.shields.io/badge/Resume%2FCV-FF5722?style=for-the-badge&logo=readdotcv&logoColor=white" /></a>
 
 <br><br>
 
