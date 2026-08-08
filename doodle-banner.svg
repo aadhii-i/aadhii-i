@@ -1,72 +1,113 @@
 <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
   <rect width="900" height="320" rx="18" fill="#F4D03F"/>
 
-  <!-- connecting lines -->
-  <g stroke="#1B1F3B" stroke-width="2.5" fill="none">
-    <path d="M160 90 L280 90"/>
-    <path d="M280 90 L280 140"/>
-    <path d="M480 90 L560 90"/>
-    <path d="M560 90 L560 60 L620 60"/>
-    <path d="M480 150 L560 150"/>
-    <path d="M560 150 L560 210 L640 210"/>
-    <path d="M320 210 L400 210 L400 240"/>
-    <path d="M480 240 L560 240"/>
-    <path d="M700 150 L760 150"/>
-    <path d="M700 210 L760 210 L760 240"/>
-    <path d="M120 150 L120 210 L200 210"/>
+  <!-- connecting lines that draw themselves in a loop -->
+  <g stroke="#1B1F3B" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M160 90 L280 90" stroke-dasharray="120" stroke-dashoffset="120">
+      <animate attributeName="stroke-dashoffset" values="120;0;0;120" keyTimes="0;0.3;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M280 90 L280 140" stroke-dasharray="50" stroke-dashoffset="50">
+      <animate attributeName="stroke-dashoffset" values="50;0;0;50" keyTimes="0;0.35;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M480 90 L560 90 M560 90 L560 60 L620 60" stroke-dasharray="150" stroke-dashoffset="150">
+      <animate attributeName="stroke-dashoffset" values="150;0;0;150" keyTimes="0;0.4;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M480 150 L560 150 M560 150 L560 210 L640 210" stroke-dasharray="170" stroke-dashoffset="170">
+      <animate attributeName="stroke-dashoffset" values="170;0;0;170" keyTimes="0;0.45;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M320 210 L400 210 L400 240" stroke-dasharray="110" stroke-dashoffset="110">
+      <animate attributeName="stroke-dashoffset" values="110;0;0;110" keyTimes="0;0.5;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M480 240 L560 240" stroke-dasharray="80" stroke-dashoffset="80">
+      <animate attributeName="stroke-dashoffset" values="80;0;0;80" keyTimes="0;0.55;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M700 150 L760 150" stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" values="60;0;0;60" keyTimes="0;0.6;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M700 210 L760 210 L760 240" stroke-dasharray="90" stroke-dashoffset="90">
+      <animate attributeName="stroke-dashoffset" values="90;0;0;90" keyTimes="0;0.65;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M120 150 L120 210 L200 210" stroke-dasharray="140" stroke-dashoffset="140">
+      <animate attributeName="stroke-dashoffset" values="140;0;0;140" keyTimes="0;0.7;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
   </g>
 
-  <!-- speaker left -->
+  <!-- speaker left, gently bobbing -->
   <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
-    <rect x="60" y="55" width="60" height="80" rx="10"/>
-    <circle cx="90" cy="80" r="12"/>
-    <circle cx="90" cy="80" r="4"/>
-    <circle cx="90" cy="112" r="8"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="2.6s" repeatCount="indefinite"/>
+      <rect x="60" y="55" width="60" height="80" rx="10"/>
+      <circle cx="90" cy="80" r="12"/>
+      <circle cx="90" cy="80" r="4"/>
+      <circle cx="90" cy="112" r="8"/>
+    </g>
   </g>
 
-  <!-- speaker right -->
+  <!-- speaker right, bobbing offset -->
   <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
-    <rect x="780" y="55" width="60" height="80" rx="10"/>
-    <circle cx="810" cy="80" r="12"/>
-    <circle cx="810" cy="80" r="4"/>
-    <circle cx="810" cy="112" r="8"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <rect x="780" y="55" width="60" height="80" rx="10"/>
+      <circle cx="810" cy="80" r="12"/>
+      <circle cx="810" cy="80" r="4"/>
+      <circle cx="810" cy="112" r="8"/>
+    </g>
   </g>
 
-  <!-- camera -->
+  <!-- camera, subtle pulse on lens -->
   <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
     <rect x="40" y="150" width="80" height="55" rx="8"/>
     <circle cx="80" cy="177" r="16"/>
-    <circle cx="80" cy="177" r="6"/>
+    <circle cx="80" cy="177" r="6">
+      <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
+    </circle>
     <rect x="60" y="140" width="20" height="12" rx="3"/>
   </g>
 
-  <!-- monitor with code (center) -->
-  <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
-    <rect x="330" y="70" width="150" height="105" rx="6" fill="#1B1F3B"/>
-    <line x1="405" y1="175" x2="405" y2="195"/>
-    <line x1="375" y1="195" x2="435" y2="195"/>
+  <!-- monitor with code (center), floats slightly + typing lines -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.2s" repeatCount="indefinite"/>
+    <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
+      <rect x="330" y="70" width="150" height="105" rx="6" fill="#1B1F3B"/>
+      <line x1="405" y1="175" x2="405" y2="195"/>
+      <line x1="375" y1="195" x2="435" y2="195"/>
+    </g>
+    <g stroke="#F4D03F" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <line x1="345" y1="90" x2="390" y2="90" stroke-dasharray="45" stroke-dashoffset="45">
+        <animate attributeName="stroke-dashoffset" values="45;0;0;45;45" keyTimes="0;0.2;0.7;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="345" y1="100" x2="410" y2="100" stroke-dasharray="65" stroke-dashoffset="65">
+        <animate attributeName="stroke-dashoffset" values="65;0;0;65;65" keyTimes="0;0.3;0.7;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="345" y1="110" x2="380" y2="110" stroke-dasharray="35" stroke-dashoffset="35">
+        <animate attributeName="stroke-dashoffset" values="35;0;0;35;35" keyTimes="0;0.4;0.7;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="345" y1="120" x2="420" y2="120" stroke-dasharray="75" stroke-dashoffset="75">
+        <animate attributeName="stroke-dashoffset" values="75;0;0;75;75" keyTimes="0;0.5;0.7;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="345" y1="130" x2="395" y2="130" stroke-dasharray="50" stroke-dashoffset="50">
+        <animate attributeName="stroke-dashoffset" values="50;0;0;50;50" keyTimes="0;0.6;0.7;0.9;1" dur="4s" repeatCount="indefinite"/>
+      </line>
+    </g>
+    <rect x="440" y="145" width="26" height="20" rx="4" fill="#F4D03F"/>
+    <text x="453" y="160" font-family="monospace" font-size="12" font-weight="bold" fill="#1B1F3B" text-anchor="middle">JS</text>
   </g>
-  <g stroke="#F4D03F" stroke-width="2.5" fill="none" stroke-linecap="round">
-    <line x1="345" y1="90" x2="390" y2="90"/>
-    <line x1="345" y1="100" x2="410" y2="100"/>
-    <line x1="345" y1="110" x2="380" y2="110"/>
-    <line x1="345" y1="120" x2="420" y2="120"/>
-    <line x1="345" y1="130" x2="395" y2="130"/>
-  </g>
-  <rect x="440" y="145" width="26" height="20" rx="4" fill="#F4D03F"/>
-  <text x="453" y="160" font-family="monospace" font-size="12" font-weight="bold" fill="#1B1F3B" text-anchor="middle">JS</text>
 
-  <!-- laptop -->
+  <!-- laptop, gentle sway -->
   <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
-    <rect x="600" y="180" width="100" height="65" rx="6"/>
-    <path d="M590 245 L710 245 L700 260 L600 260 Z"/>
-    <line x1="620" y1="200" x2="680" y2="200"/>
-    <line x1="620" y1="212" x2="670" y2="212"/>
-    <line x1="620" y1="224" x2="655" y2="224"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2.9s" begin="0.6s" repeatCount="indefinite"/>
+      <rect x="600" y="180" width="100" height="65" rx="6"/>
+      <path d="M590 245 L710 245 L700 260 L600 260 Z"/>
+      <line x1="620" y1="200" x2="680" y2="200"/>
+      <line x1="620" y1="212" x2="670" y2="212"/>
+      <line x1="620" y1="224" x2="655" y2="224"/>
+    </g>
   </g>
 
-  <!-- gear / settings -->
-  <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
+  <!-- gear, continuously rotating -->
+  <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round" transform-origin="440 240">
+    <animateTransform attributeName="transform" type="rotate" from="0 440 240" to="360 440 240" dur="7s" repeatCount="indefinite"/>
     <circle cx="440" cy="240" r="22"/>
     <circle cx="440" cy="240" r="7"/>
     <line x1="440" y1="212" x2="440" y2="220"/>
@@ -84,35 +125,41 @@
     <path d="M110 210 L110 245 L200 245 L200 220 L160 220 L155 210 Z"/>
   </g>
 
-  <!-- mobile phone top -->
+  <!-- mobile phone top, bobbing -->
   <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
-    <rect x="595" y="35" width="35" height="55" rx="6"/>
-    <line x1="605" y1="80" x2="620" y2="80"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2.4s" begin="0.9s" repeatCount="indefinite"/>
+      <rect x="595" y="35" width="35" height="55" rx="6"/>
+      <line x1="605" y1="80" x2="620" y2="80"/>
+    </g>
   </g>
 
-  <!-- printer / server stack -->
+  <!-- printer / server stack, blinking light -->
   <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
     <rect x="740" y="180" width="55" height="65" rx="5"/>
     <line x1="750" y1="195" x2="785" y2="195"/>
     <line x1="750" y1="210" x2="785" y2="210"/>
-    <circle cx="758" cy="228" r="4"/>
+    <circle cx="758" cy="228" r="4" fill="#1B1F3B">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <!-- play button icon top -->
-  <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round">
+  <!-- play button icon top, pulsing scale -->
+  <g stroke="#1B1F3B" stroke-width="3" fill="none" stroke-linejoin="round" transform-origin="267 57">
+    <animateTransform attributeName="transform" type="scale" values="1;1.08;1" dur="2s" repeatCount="indefinite"/>
     <rect x="245" y="35" width="45" height="45" rx="8"/>
     <path d="M260 48 L275 57 L260 66 Z" fill="#1B1F3B"/>
   </g>
 
-  <!-- small dot accents -->
+  <!-- small dot accents, twinkling -->
   <g fill="#1B1F3B">
-    <circle cx="280" cy="140" r="3"/>
-    <circle cx="480" cy="90" r="3"/>
-    <circle cx="480" cy="150" r="3"/>
-    <circle cx="480" cy="240" r="3"/>
-    <circle cx="700" cy="150" r="3"/>
-    <circle cx="700" cy="210" r="3"/>
-    <circle cx="160" cy="90" r="3"/>
-    <circle cx="120" cy="150" r="3"/>
+    <circle cx="280" cy="140" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="90" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="150" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="240" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="150" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="210" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="160" cy="90" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="150" r="3"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" begin="2.1s" repeatCount="indefinite"/></circle>
   </g>
 </svg>
