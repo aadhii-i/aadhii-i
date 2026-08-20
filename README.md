@@ -165,7 +165,7 @@ A product design concept for an AI-powered health tracker — exploring how a cl
 
 <a href="https://github.com/aadhii-i"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/aadhiiii"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://drive.google.com/file/d/1HjK2lEJ0UVj8YE1b2ol3xvxWXwPVa7a4/view?usp=sharing"><img src="https://img.shields.io/badge/Resume%2FCV-FF5722?style=for-the-badge&logo=readdotcv&logoColor=white" /></a>
+<a href="https://drive.google.com/file/d/1JkTMUui-6hC6ZL7lByDi8RZ_NSCxEBdr/view?usp=sharing"><img src="https://img.shields.io/badge/Resume%2FCV-FF5722?style=for-the-badge&logo=readdotcv&logoColor=white" /></a>
 
 <br><br>
 
